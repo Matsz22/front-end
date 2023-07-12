@@ -1,0 +1,94 @@
+<!DOCTYPE html>: Esse comando define a versão do HTML que está sendo utilizada no documento. O doctype para a versão mais recente do HTML é <!DOCTYPE html>.
+
+<html></html>: Essas tags indicam o início e o fim do documento HTML.
+
+<head></head>: Essas tags contêm informações sobre o documento, como o título da página, links para folhas de estilo CSS e scripts JavaScript.
+
+<title></title>: Essas tags definem o título da página, que é exibido na barra de título do navegador ou na aba.
+
+<body></body>: Essas tags contêm o conteúdo principal da página, como texto, imagens, links, vídeos e outros elementos visíveis aos usuários.
+
+<h2>-<h6>: Essas tags são usadas para criar cabeçalhos de diferentes níveis. <h1> é o cabeçalho de nível mais alto e <h6> é o mais baixo. Eles são úteis para estruturar e organizar o conteúdo da página.
+
+<p></p>: Essas tags são usadas para criar parágrafos de texto. Você pode usar essas tags para dividir o conteúdo em blocos de texto coerentes.
+
+<ul></ul> e <ol></ol>: Essas tags são usadas para criar listas não ordenadas (com marcadores) e listas ordenadas (numeradas), respectivamente. Você pode usar as tags <li></li> dentro das tags <ul></ul> ou <ol></ol> para criar itens de lista.
+
+<a></a>: Essas tags são usadas para criar links. O atributo href define o URL de destino para onde o link deve apontar. Você também pode adicionar um texto ou uma imagem dentro das tags <a></a> para criar um link visível.
+
+<img>: Essa tag é usada para exibir imagens em uma página da web. O atributo src especifica o caminho da imagem, o atributo alt fornece um texto alternativo e os atributos opcionais, como width e height, definem as dimensões da imagem.
+
+<table></table>: Essas tags são usadas para criar tabelas. Você pode usar as tags <tr></tr> para criar linhas, <th></th> para criar cabeçalhos de tabela e <td></td> para criar células de dados.
+
+<form></form>: Essas tags são usadas para criar formulários interativos. Os elementos do formulário, como <input>, <select>, <textarea>, são usados para coletar dados do usuário.
+
+<div></div>: Essas tags são usadas para agrupar elementos em um bloco de conteúdo. Elas são frequentemente usadas para aplicar estilos CSS ou manipular elementos com JavaScript.
+
+<span></span>: Essas tags são usadas para agrupar e estilizar um trecho específico de texto dentro de um parágrafo ou outra seção de texto. Elas não têm nenhum significado semântico específico, mas podem ser estilizadas com CSS ou manipuladas com JavaScript.
+
+<strong></strong> e <em></em>: Essas tags são usadas para dar ênfase a palavras ou frases dentro de um texto. A tag <strong> é geralmente renderizada em negrito, enquanto a tag <em> é renderizada em itálico. Elas também têm importância semântica, onde <strong> indica uma ênfase mais forte e <em> indica ênfase enfatizada.
+
+<br>: Essa tag é usada para inserir uma quebra de linha simples dentro de um parágrafo ou em qualquer lugar onde a quebra de linha seja necessária.
+
+<iframe></iframe>: Essas tags são usadas para incorporar uma página web ou outro conteúdo de uma fonte externa dentro de uma página HTML. Isso permite exibir um vídeo do YouTube, um mapa do Google ou outro conteúdo de terceiros em sua página.
+
+<audio></audio> e <video></video>: Essas tags são usadas para incorporar áudio e vídeo em uma página da web, respectivamente. Você pode especificar a origem do arquivo de áudio/vídeo usando o atributo src e definir outras configurações, como controles e reprodução automática, por meio de atributos adicionais.
+
+<header></header>, <nav></nav>, <main></main>, <section></section>, <article></article>, <footer></footer>: Essas são tags semânticas introduzidas no HTML5 para estruturar melhor o conteúdo de uma página. Elas ajudam a organizar a página em diferentes seções, como cabeçalho, navegação, conteúdo principal, seções individuais, artigos e rodapé.
+
+<input>: Essa tag é usada para criar campos de entrada interativos em um formulário. Existem vários tipos de campos de entrada, como texto, senha, caixa de seleção, botões de opção, entre outros. Cada tipo é especificado usando o atributo type.
+
+
+
+1. `<audio></audio>` e `<source>`: Essas tags são usadas para reproduzir arquivos de áudio em uma página da web. A tag `<audio></audio>` envolve o conteúdo de áudio, enquanto a tag `<source>` especifica a origem do arquivo de áudio. Você pode adicionar múltiplas tags `<source>` dentro de `<audio></audio>` para fornecer diferentes formatos do arquivo de áudio e permitir a reprodução em diferentes navegadores.
+
+Exemplo:
+```html
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  <source src="audio.ogg" type="audio/ogg">
+  Seu navegador não suporta a reprodução de áudio.
+</audio>
+```
+
+2. `<video></video>` e `<source>`: Essas tags são usadas para exibir vídeos em uma página da web. A tag `<video></video>` envolve o conteúdo de vídeo, enquanto a tag `<source>` especifica a origem do arquivo de vídeo. Assim como com a tag `<audio></audio>`, você pode adicionar múltiplas tags `<source>` para fornecer diferentes formatos do arquivo de vídeo.
+
+Exemplo:
+```html
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  Seu navegador não suporta a reprodução de vídeo.
+</video>
+```
+
+3. `<iframe></iframe>`: Além de incorporar páginas web externas, a tag `<iframe></iframe>` também pode ser usada para criar áreas de visualização de conteúdo embutido, como documentos PDF, planilhas, apresentações de slides, etc.
+
+Exemplo:
+```html
+<iframe src="documento.pdf" width="500" height="400"></iframe>
+```
+
+4. `<datalist></datalist>` e `<option>`: Essas tags são usadas para criar listas de opções predefinidas em campos de entrada de texto. A tag `<datalist></datalist>` contém as opções, especificadas pelas tags `<option>`. Quando o usuário digita no campo de entrada, uma lista suspensa é exibida com as opções disponíveis.
+
+Exemplo:
+```html
+<label for="fruta">Escolha uma fruta:</label>
+<input list="frutas" id="fruta" name="fruta">
+<datalist id="frutas">
+  <option value="Maçã">
+  <option value="Banana">
+  <option value="Laranja">
+  <option value="Morango">
+</datalist>
+```
+
+5. `<meter></meter>`: Essa tag é usada para exibir uma medida escalar dentro de um intervalo conhecido. É útil para representar gráficos de progresso, pontuações, níveis de energia, etc.
+
+Exemplo:
+```html
+<label for="bateria">Nível de bateria:</label>
+<meter id="bateria" value="0.7">70%</meter>
+```
+
+Essas são mais algumas funcionalidades interessantes do HTML. Explore a documentação para descobrir outras tags e recursos que podem ser úteis em seus projetos.
