@@ -1,7 +1,0 @@
-valor1 = float(input("digitar o primeiro numero"))
-valor2 = float(input("digitar o segundo numero"))
-valor3 = float(input("digitar o terceiro numero"))
-
-valorTotal = (valor1+valor2+valor3)/3
-
-print("a média é: " +str(valorTotal))
