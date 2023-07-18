@@ -68,6 +68,7 @@ footer .nav a:hover {
 .btn-custom {
   color: white;
   border-radius: 500px;
+  margin: 15px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 500px;
   text-transform: uppercase;
@@ -169,7 +170,7 @@ h3 {
 /* xs */
 @media screen and (max-width: 767px) {
     h1 {
-        font-size: 50px;
+        font-size: 65px;
     }
     .btn-custom {
         margin: 10px 15px;
